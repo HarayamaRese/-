@@ -122,3 +122,5 @@
 	font-size: 10px;
 	font-weight: bold;
 }
+/* 去掉audio点击时的蓝色边框 */
+.audio:focus{outline:none;}
