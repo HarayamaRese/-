@@ -171,6 +171,17 @@ div{
 	width: 100%;
 	height: 100%;
 }
+.link{
+	position: relative;
+	bottom: 243px;
+	left: 80%;
+	display: flex;
+	flex-direction: row ;
+	justify-content:space-between;
+}
+.link>div>a>img{
+	width: 2.7vw;
+}
 /***************************************index中下部门*****************************************************/
 
 
