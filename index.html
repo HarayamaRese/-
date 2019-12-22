@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
 		<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/APlayer.min.css"/>
 	</head>
 	<body>
 		<!-- 顶部滚动进度条 -->
@@ -500,10 +501,12 @@
 			<span>Sunshine&nbsp;人来人往&nbsp;&nbsp;&nbsp;</span><a href="http://beian.miit.gov.cn/" style="color: #6D6D6D;">苏ICP备19025063号-2</a>
 		</div>
 		<br>
+		<div id="aplayer"></div>
 	</body>
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="layui/layui.js"></script>
+	<script src="js/APlayer.min.js"></script>
 	<script>
 		layui.use('carousel', function(){
 		  var carousel = layui.carousel;
@@ -532,10 +535,22 @@
 		  });
 			
 		});
-		
 		// 组织a标签中video元素跳转
 		function check(e){
 		   return (e||event).target.title!="video";
 		}
+		
+		// 播放器
+		const ap = new APlayer({
+		    container: document.getElementById('aplayer'),
+			fixed: true,
+		    audio: [{
+		        name: '长生诀',
+		        artist: '未知',
+		        url: 'http://image.jxfcwl.top/myblog-video/%E8%A5%BF%E7%93%9CJUN%20-%20%E9%95%BF%E7%94%9F%E8%AF%80.mp3',
+		        cover: 'http://image.jxfcwl.top/myblog-video/9c774d91gy1ft4lhr5vbmg20jp08okbw.gif'
+		    }
+			]
+		});
 	</script>
 </html>
