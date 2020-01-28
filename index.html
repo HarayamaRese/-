@@ -21,9 +21,9 @@
 				<div class="dropdown">
 				  <span class="dropdown_dow">常用工具</span>
 				  <div class="dropdown-content ">
-					<a href="#">菜鸟教程 1</a>
-				    <a href="#">菜鸟教程 2</a>
-				    <a href="#">菜鸟教程 3</a>
+					<a href="#">列表1</a>
+					<a href="#">列表2</a>
+					<a href="#">列表3</a>
 				  </div>
 				</div>
 				<a href="#">我的游戏</a>
@@ -32,6 +32,9 @@
 				<a href="#">留言板</a>
 				<a href="link.html">友情链接</a>
 			</div>
+			<!-- <div class="QQ">
+				<img src="img/QQ-logo.png" alt="">
+			</div> -->
 		</div>
 		<!-- 中部图片and头像 -->
 		<div class="content">
@@ -48,9 +51,9 @@
 					<img src="img/people.jpg" alt="">
 				</div>
 				<div class="link" style="height: 6vh;width: 10vw;">
-					<div><a href="https://www.jianshu.com/u/03ecacbb2a42"><img src="img/jianshu.jpg" alt=""></a></div>
-					<div><a href="https://gitee.com/cwljxf"><img src="img/mayun.jpg" alt=""></a></div>
-					<div><a href="https://github.com/chenweilong1713/"><img src="img/github.jpg" alt=""></a></div>
+					<div><a href="https://www.jianshu.com/u/03ecacbb2a42" target="_blank"><img src="img/jianshu.jpg"  alt=""></a></div>
+					<div><a href="https://gitee.com/cwljxf" target="_blank"><img src="img/mayun.jpg" alt=""></a></div>
+					<div><a href="https://github.com/chenweilong1713/" target="_blank"><img src="img/github.jpg" alt=""></a></div>
 				</div>
 			</div>
 		</div>
@@ -446,6 +449,7 @@
 						<div class="subtitle">
 							&nbsp;&nbsp;动态
 						</div>
+						<!-- 这里的flex布局是居中,你可以在main.css中搜索一下 live 然后修改方向,我个人比较喜欢居中,哈哈 -->
 						<div class="live">
 							<a href="#"><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1198854719,4294312191&fm=11&gp=0.jpg" alt="图片加载失败"></a>
 							<a href="#"><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2697257871,2645712076&fm=11&gp=0.jpg" alt="图片加载失败"></a>
@@ -483,7 +487,7 @@
 					<div id="circle" style="background-color: #FDBC40;"></div>
 					<div id="circle" style="background-color: #35CD4B;"></div>
 					<div class="subtitle">
-						&nbsp;&nbsp;每日一首
+						&nbsp;&nbsp;每日音乐
 					</div>
 					<br>
 					<div style="text-align: center;">
@@ -533,9 +537,8 @@
 			indicator:"none"  //是否显示点点点
 		    ,anim: 'updown' //切换动画方式
 		  });
-			
 		});
-		// 组织a标签中video元素跳转
+		// 阻止a标签中video元素跳转
 		function check(e){
 		   return (e||event).target.title!="video";
 		}
@@ -544,7 +547,8 @@
 		const ap = new APlayer({
 		    container: document.getElementById('aplayer'),
 			fixed: true,
-		    audio: [{
+		    audio: [
+			{
 		        name: '长生诀',
 		        artist: '未知',
 		        url: 'http://image.jxfcwl.top/myblog-video/%E8%A5%BF%E7%93%9CJUN%20-%20%E9%95%BF%E7%94%9F%E8%AF%80.mp3',
