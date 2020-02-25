@@ -21,6 +21,7 @@ a {
 	left: 0;
 	z-index: 1025;
 	height: 3px;
+	transition: width 0.3s;
 }
 /* z-index 表示绝对定位显示的级数,越大显示越上 */
 .top{
